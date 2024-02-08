@@ -1,0 +1,42 @@
+.themeSwitch{
+    width: 50%;
+    margin: auto;
+    height: 1.04vw;
+    display: flex;
+    border: 0.07vw solid var(--white);
+    border-radius: 0.52vw;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.themeSwitch span{
+    width: 50%;
+    height: 100%;
+    background-color: var(--black);
+    border-radius: 0.52vw;
+    transition: 0.3s linear;
+    display: flex;
+    position: relative;
+}
+
+.themeSwitchopen{
+    width: 50%;
+    margin: auto;
+    height: 1.04vw;
+    display: flex;
+    border: 0.07vw solid var(--white);
+    border-radius: 0.52vw;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.themeSwitchopen span{
+    width: 50%;
+    height: 100%;
+    background-color: var(--black);
+    border-radius: 0.52vw;
+    transition: 0.3s linear;
+    display: flex;
+    position: relative;
+    left: 50%;
+}

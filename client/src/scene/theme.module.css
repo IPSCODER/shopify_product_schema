@@ -1,0 +1,10 @@
+.outlet{
+    width: 94%;
+    padding: 0 3%;
+    padding-top: 3.64vw;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    height: auto;
+    overflow-x: hidden;
+    overflow: auto;
+}

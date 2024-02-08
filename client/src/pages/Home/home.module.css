@@ -1,0 +1,11 @@
+.productlist{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.52vw;
+    padding: 0% 0;
+    height: auto;
+    margin: auto;
+    row-gap: 2.60vw;
+}
+

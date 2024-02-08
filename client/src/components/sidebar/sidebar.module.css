@@ -1,0 +1,39 @@
+.sidebar{
+    width: 6%;
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--black);
+    padding: 2% 0.5%;
+    padding-top: 3.64vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--white);
+    gap: 1.04vw;
+}
+
+.sidebar ul li{
+    width: 100%;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    gap: 0.52vw;
+    color: var(--white);
+    font-size: 0.9vw;
+}
+.sidebar ul li a svg{
+    width: 1.04vw;
+    height: 1.04vw;
+}
+

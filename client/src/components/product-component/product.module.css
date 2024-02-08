@@ -1,0 +1,114 @@
+.procuct_component{
+    width: 14.3vw;
+    min-height: 15.62vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: 0px 0px 0.41vw var(--shadow);
+    padding: 5px;
+
+}
+
+.procuct_component a{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.qty{
+position: absolute;
+top: -0.26vw;
+right: -0.26vw;
+min-width: 1.30vw;
+min-height: 1.30vw;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.62vw;
+border-radius: 50%;
+background-color: green;
+font-weight: bold;
+color: var(--grey);
+}
+
+.procuct_component img{
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+}
+
+.title::first-letter,.description::first-letter{
+    text-transform: uppercase;
+}
+
+.title{
+    color: var(--black);
+    font-weight:500;
+    font-size: 0.83vw;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.description{
+    color: var(--black);
+    font-weight:500;
+    font-size: 0.67vw;
+    padding: 1%;
+}
+
+.price_inventory{
+    display: flex;
+    width: 100%;
+    gap: 0.26vw;
+    font-size: 0.62vw;
+    padding: 1%;
+    margin-top: auto;
+    color: var(--black);
+}
+
+.price_inventory span{
+    margin-left: auto;
+}
+
+.price_inventory span::first-letter{
+    text-transform: uppercase;
+}
+
+
+.btns{
+    width: 100%;
+    height: 2.08vw;
+    margin-top: auto;
+}
+
+.btns{
+    background-color: #111111;
+    border: 0.07vw solid #f5f5f5;
+    color: #f5f5f5;
+    transition: 0.3s linear;
+}
+
+.btns:hover{
+    background-color: #f5f5f5;
+    color: #111111;
+    border: 0.07vw solid #111111;
+    cursor: pointer;
+}
+.Popup{
+    width: auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.04vw;
+    padding: 1.04vw;
+    box-shadow: 0.14vw 0.14vw 0.14vw var(--red);
+    color: var(--black);
+}
+
+.Popup button{
+    background-color: var(--red);
+}

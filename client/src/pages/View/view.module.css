@@ -1,0 +1,57 @@
+.view{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.imglist{
+    width: 15vw;
+    height: calc(100vh - 10.2vh);
+    display: flex;
+    flex-direction: column;
+    gap: 0.26vw;
+    overflow: auto;
+    padding: 0.26vw;
+    background-color: var(--white);
+}
+
+.imglist img{
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+}
+
+.jsondata{
+    width: 87%;
+    height: calc(100vh - 10.2vh);
+    padding: 10% 2%;
+    padding: 2%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btns{
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    z-index: 1;
+    display: flex;
+    gap: 0.26vw;
+    align-items: center;
+}
+.btns button{
+    padding: 0.52vw 1.04vw;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 0.26vw;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btns button:hover{
+    background-color: var(--white);
+    color: var(--black);
+}

@@ -1,0 +1,11 @@
+export const GETPRODUCTS = 'GETPRODUCTS'
+export const DELETE_PRODUCT = "DELETE_PRODUCT";
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const GET_SINGLE_PRODUCT = "GET_SINGLE_PRODUCT";
+export const UPDATE_PRODDUCT = 'UPDATE_PRODUCT';
+export const SEARCH = "SEARCH";
+export const POPUP = "POPUP";
+export const VENDOR = "VENDOR";
+export const storeData = "STORE_DATA";
+export const GET_CURRENCY = "GET_CURRENCY";
+export const GET_DOMAIN = "GET_DOMAIN";

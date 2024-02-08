@@ -1,0 +1,122 @@
+.add{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    background-color: var(--white);
+    display: flex;
+    gap: 1.04vw;
+}
+
+.add form{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.52vw;
+}
+
+.add form.err input{
+    border-bottom:0.14vw solid var(--red);
+}
+
+.input_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.52vw;
+    position: relative;
+}
+
+.input_section label{
+    font-size: 0.78vw;
+    position: absolute;
+    margin: auto;
+    color: var(--black);
+    left: 50%;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.input_section input{
+    width: 100%;
+    height: 2.08vw;
+    padding: 0.52vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.07vw solid var(--black);
+    color: var(--black);
+    position: relative;
+    z-index: 1;
+}
+
+.input_section input:focus-visible{
+    outline: none;
+    border-bottom: 0.21vw solid var(--black);
+}
+
+.input_section select{
+    width: 10vw;
+    height: 2.08vw;
+    padding: 0.52vw;
+    background-color: transparent;
+    border: 0.07vw solid var(--black);
+    border-radius: 0.26vw;
+}
+.input_section select option{
+    width: 100%;
+    height: 2.08vw;
+}
+
+.submit{
+    width: 100%;
+    margin: auto;
+    height: 2.34vw;
+    background-color: var(--black);
+    color: var(--grey);
+    font-size: 0.78vw;
+    border: none;
+    border-radius: 0.26vw;
+    cursor: pointer;
+}
+
+.jsonFormate{
+    width: 60%;
+    padding: 2%;
+    position: relative;
+    color: var(--black);
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.jsonFormate pre{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 10vw;
+    font-size: 0.8vw;
+}
+
+
+.copyClipboard{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+    display: flex;
+    gap: 0.26vw;
+    align-items: center;
+    padding: 0.52vw 1.04vw;
+    background-color: var(--black);
+    color: var(--grey);
+    border: none;
+    border-radius: 0.26vw;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.copyClipboard:hover{
+    background-color: var(--grey);
+    color: var(--black);
+}

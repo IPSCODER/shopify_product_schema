@@ -1,0 +1,44 @@
+.header{
+    width: 94%;
+    height: 3.12vw;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 6%;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+    padding-right: 3%;
+    box-shadow: 0.05vw -0.26vw 0.41vw var(--black);
+}
+
+.header h1{
+    color: var(--black);
+    font-size: 1.30vw;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 0.52vw;
+}
+
+.header ul li,.header ul li a{
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+.searchBar{
+    width: 30vw;
+    height: 2.08vw;
+    border-radius: 1.04vw;
+    padding: 0.52vw;
+    padding-left: 1.30vw;
+    background-color: transparent;
+    border: 1px solid var(--black);
+    font-size: 0.72vw;
+    text-transform: uppercase;
+    color: var(--black);
+}

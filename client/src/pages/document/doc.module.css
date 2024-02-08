@@ -1,0 +1,11 @@
+.docs{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 5px;
+}
+
+.docs ol{
+    padding-left: 20px;
+    padding-top: 10px;
+}

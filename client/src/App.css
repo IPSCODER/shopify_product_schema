@@ -1,0 +1,15 @@
+.darkTheme{
+    --grey:#262b33;
+    --black:#ffffff;
+    --white:#111111;
+    --shodow:#ffffff40;
+    --red: #A91B0D;
+  }
+  
+  .lightTheme{
+    --grey:#f5f5f5;
+    --black:#111111;
+    --white:#ffffff;
+    --shodow:#11111140;
+    --red: #A91B0D;
+  }
