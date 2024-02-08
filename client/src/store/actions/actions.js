@@ -51,7 +51,7 @@ const getDomain = (domain) =>({
 
 export const loadProductList = () => {
     return function(dispatch){
-        axios.get("http://localhost:5000/").then((resp) => {
+        axios.get("https://server-vo2k.onrender.com/").then((resp) => {
             dispatch(getData(resp.data))
             dispatch(loadGetCurrency())
         }).catch(err => console.log(err))
@@ -61,7 +61,7 @@ export const loadProductList = () => {
 export const loadDeleteProduct = (id) =>{
     console.log(id);
     return function(dispatch){
-        axios.delete(`http://localhost:5000/${id}`).then((resp) =>{
+        axios.delete(`https://server-vo2k.onrender.com/${id}`).then((resp) =>{
             dispatch(deleteProduct())
             dispatch(loadProductList())
         }).catch((err) => console.log(err))
@@ -71,7 +71,7 @@ export const loadDeleteProduct = (id) =>{
 export const loadAddProduct = (productData) =>{
     console.log("loadAddProduct");
     return function(dispatch){
-        axios.post(`http://localhost:5000/post`,{body:productData}).then((resp)=>{
+        axios.post(`https://server-vo2k.onrender.com/post`,{body:productData}).then((resp)=>{
             dispatch(addProduct())
             dispatch(loadProductList())
         }).catch((err) => console.log(err))
@@ -95,7 +95,7 @@ export const loadPopup =() =>{
 
 export const loadUpdateProduct = (id,data) =>{
     return function(dispatch){
-        axios.put(`http://localhost:5000/put/${id}`,{data:data}).then((resp)=>{
+        axios.put(`https://server-vo2k.onrender.com/put/${id}`,{data:data}).then((resp)=>{
             dispatch(updateProduct())
             dispatch(loadProductList())
         })
@@ -104,7 +104,7 @@ export const loadUpdateProduct = (id,data) =>{
 
 export const loadGetCurrency = () =>{
     return function(dispatch){
-        axios.get('http://localhost:5000/currency').then(resp=>{
+        axios.get('https://server-vo2k.onrender.com/currency').then(resp=>{
             dispatch(getcurrency(resp.data.currency))
             dispatch(vendor(resp.data.name))
             dispatch(getDomain(resp.data.domain))
