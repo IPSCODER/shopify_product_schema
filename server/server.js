@@ -14,13 +14,13 @@ const PORT = process.env.PORT || 9000;
 
 
 var shopify = new Shopify({
-    shopName : 'Test-Schema0015',
-    apiKey: '2e4a60ff336d70c9ecf2c675221a7420',
-    password: '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',
+    shopName : 'test-schema15',
+    apiKey: 'a5f8e629be8f29e3d735aac35eb02700',
+    password: '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',
 });
-const nshopifyDomain = 'test-schema0015.myshopify.com';
-const napiKey = '2e4a60ff336d70c9ecf2c675221a7420';
-const npassword = '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';
+const nshopifyDomain = 'test-schema15.myshopify.com';
+const napiKey = 'a5f8e629be8f29e3d735aac35eb02700';
+const npassword = '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';
 
 
 
@@ -69,7 +69,7 @@ app.post("/post",(req,res) =>{
     .create({
         title: body.title,
         body_html: body.description,
-        vendor: "Test-Schema0015",
+        vendor: "test-schema15",
         images: [
             {
                 src: body.images
@@ -97,7 +97,7 @@ app.put("/put/:id",(req,resp) => {
     const updateData ={
         title: data.title,
         body_html: data.description,
-        vendor: "Test-Schema0015",
+        vendor: "test-schema15",
         images: [
             {
                 src: data.images
